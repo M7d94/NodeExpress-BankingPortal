@@ -14,12 +14,11 @@ fs.readFileSync('/src/json/accounts.json', {encoding:'utf-8'});
 fs.readFileSync('/src/json/users.json', {encoding:'utf-8'});
 app.get('/', (req, res) => {
   res.render('index', {
-    title: 'Account Summary',
-    accounts:'accounts'
+    title: 'Index'
    
     
   })
 });
 
-app.listen(3000, () => console.log(`PS Project Running on port 3000!`))
+app.listen(3000);
 
