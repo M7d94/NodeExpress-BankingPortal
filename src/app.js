@@ -43,26 +43,22 @@ app.get('/credit', (req, res) =>{
   { account: accounts.credit })
  });
 
- app.post('/transfer',(req,res)=>{
+ /*app.post('/transfer',(req,res)=>{
   accounts["accountsJSON "].balance.parseInt()
   accounts= JSON.parse(file.data.toString('accountsJSON'));
   fs.writeFileSync(path.join(__dirname, 'json', 'accounts.json'), 'utf8');
   res.render('transfer',{
     message: "Transfer Completed" 
-  })
- })
+  });
+ });*/
 
  app.post('/payment',(req,res)=>{
   res.render('payment',{
     account: accounts.credit 
-  })
- })
+  });
+ });
 
- app.post('/payment',(req,res)=>{
-  res.render('payment',{
-    account: accounts.credit 
-  })
- })
+ 
 
 app.listen(3000, () => console.log(`PS Project Running on port 3000!`))
 
