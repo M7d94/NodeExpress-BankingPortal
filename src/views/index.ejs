@@ -4,6 +4,10 @@
     <h1><%= title %></h1>
     <a href='/profile'>Profile</a>
   </div>
+<%include ('summary') %>
+<% accounts.forEach(function(account){ %>
+    <%- include('summary', {account: account.checking,account: account.savings,account: account.credit}); %>
+  <% }); %>
 
   <br><a href='/transfer'>Transfer</a>
 
