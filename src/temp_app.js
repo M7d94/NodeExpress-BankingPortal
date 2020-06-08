@@ -47,9 +47,9 @@ app.post('/payment', (req, res) => {
     accounts.credit.balance -= req.body.amount;
     accounts.credit.available += parseInt(req.body.amount);
     let accountsJSON = JSON.stringify(accounts, null, 4)
-    const writeJSON=writeJSON();
+    const accountsJSON=writeJSON();
 });
 
 app.get('/profile', (req, res) =>  res.render('profile', { user: users[0] }));
-app.listen(3000, () => console.log(`PS Project Running on port 3000!`))
+app.listen(3000);
 
