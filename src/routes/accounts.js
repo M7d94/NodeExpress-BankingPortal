@@ -18,4 +18,4 @@ router.get('/credit', (req, res) =>{
  { account: accounts.credit })
 });
 
-module.exports.router=router;
+module.exports = router; 

@@ -14,4 +14,4 @@ router.post('/transfer', (req, res) => {
   res.render('transfer', {message: 'Transfer Completed'});
 });
 
-module.exports.router=router;
+module.exports = router; 
